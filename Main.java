@@ -58,7 +58,10 @@ public class Main {
         BinaryTree tree = new BinaryTree();
         tree.buildTree();
         tree.printPreOrderWrapper();
+<<<<<<< HEAD
         tree.printInOrderWrapper();
+=======
+>>>>>>> 29a203de1e11a9da05ba48c859750c561325c80a
         tree.printPostOrderWrapper();
         input.close();
 
