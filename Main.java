@@ -1,6 +1,7 @@
 import java.util.Scanner;
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+import java.util.ArrayList;
+import java.util.Arrays;
+
 public class Main {
 
 
@@ -61,6 +62,37 @@ public class Main {
         tree.printInOrderWrapper();
         tree.printPostOrderWrapper();
         input.close();
+
+        System.out.println("\nEXAMPLE 11: Greatest Common Divisor Version 1");
+        Recursion.gcd1(153200,90);
+
+        System.out.println("\nEXAMPLE 12: Greatest Common Divisor Version 2");
+        Recursion.gcd2(153200,90, 0);
+
+
+        //CHECKING UNDERSTANDING
+        Recursion.ex13(7);
+
+        Recursion.ex14(12);
+
+        Recursion.ex15("abcdefabc");
+
+        ArrayList<String> wordList = new ArrayList<>(Arrays.asList("a", "b", "c"));
+        Recursion.ex16(wordList, 0, 2);
+
+        ArrayList<ArrayList<Character>> grid = new ArrayList<ArrayList<Character>>(5);
+        ArrayList<Character> row0 = new ArrayList<>(Arrays.asList(' ','D',' ','D','D'));
+        ArrayList<Character> row1 = new ArrayList<>(Arrays.asList(' ','D',' ','D','D'));
+        ArrayList<Character> row2 = new ArrayList<>(Arrays.asList(' ',' ',' ','D',' '));
+        ArrayList<Character> row3 = new ArrayList<>(Arrays.asList(' ','D',' ',' ',' '));
+        ArrayList<Character> row4 = new ArrayList<>(Arrays.asList(' ','D',' ','D',' '));
+        grid.add(row0);
+        grid.add(row1);
+        grid.add(row2);
+        grid.add(row3);
+        grid.add(row4);
+	    if (Recursion.findMazePath(grid, 0, 0))
+		    Recursion.printMaze(grid);
 
     }
 
