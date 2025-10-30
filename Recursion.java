@@ -43,7 +43,7 @@ public class Recursion{
         if (n == 1)
            System.out.println(n + " ");
         else {  
-            System.out.println(n + " ");
+            System.out.print(n + " ");
             ex13(n / 2);
         }             
     }
@@ -51,10 +51,10 @@ public class Recursion{
     //What is printed if n = 12
     public static void ex14(Integer n){
         if (n == 1)
-           System.out.println(n + " ");
+           System.out.print(n + " ");
         else {  
             ex14(n / 3);
-            System.out.println(n + " ");
+            System.out.print(n + " ");
         }             
     }
     //What is printed if the string is abcdefabc

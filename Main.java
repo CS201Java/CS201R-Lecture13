@@ -8,7 +8,7 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("RECURSION\n");
         Scanner input = new Scanner(System.in);
-        /*
+        
         System.out.println("EXAMPLE 1: Tail Recursion");
         example1(5);
         System.out.println();
@@ -26,6 +26,12 @@ public class Main {
         System.out.print("Enter a nonnegative integer: ");
         n = input.nextInt();
         System.out.println("\nEXAMPLE 4: Factorial of " + n + " is " + example4(n));
+
+        /* 
+        //CHECKING UNDERSTANDING
+        Recursion.ex13(7);
+        Recursion.ex14(12);
+        System.out.println();
 
         System.out.println("\nEXAMPLE 5: Fibonacci Sequence");
         System.out.print("Enter a nonnegative integer: ");
@@ -53,8 +59,9 @@ public class Main {
         System.out.print("Enter a nonnegative integer: ");
         n = input.nextInt();
         System.out.println("\nEXAMPLE 9: " + n + " mutant bunnies have " + example9(n) + " ears");
-
         */
+
+        /*
         System.out.println("\nEXAMPLE 10: Demo - Binary Trees");
         BinaryTree tree = new BinaryTree();
         tree.buildTree();
@@ -68,12 +75,9 @@ public class Main {
 
         System.out.println("\nEXAMPLE 12: Greatest Common Divisor Version 2");
         Recursion.gcd2(153200,90, 0);
+        */
+        /*
 
-
-        //CHECKING UNDERSTANDING
-        Recursion.ex13(7);
-
-        Recursion.ex14(12);
 
         Recursion.ex15("abcdefabc");
 
@@ -93,9 +97,9 @@ public class Main {
         grid.add(row4);
 	    if (Recursion.findMazePath(grid, 0, 0))
 		    Recursion.printMaze(grid);
-
-    }
-
+        */
+     }
+ 
     
     //using tail recursion
     public static void example1(int n){
