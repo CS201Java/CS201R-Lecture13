@@ -27,11 +27,13 @@ public class Main {
         n = input.nextInt();
         System.out.println("\nEXAMPLE 4: Factorial of " + n + " is " + example4(n));
 
-        /* 
+ 
+        /*
         //CHECKING UNDERSTANDING
         Recursion.ex13(7);
         Recursion.ex14(12);
         System.out.println();
+        System.out.println(Recursion.ex14b(12));
 
         System.out.println("\nEXAMPLE 5: Fibonacci Sequence");
         System.out.print("Enter a nonnegative integer: ");
