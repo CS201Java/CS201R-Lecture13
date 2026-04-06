@@ -1,6 +1,4 @@
 import java.util.Scanner;
-import java.util.ArrayList;
-import java.util.Arrays;
 
 public class Main {
 
@@ -28,7 +26,7 @@ public class Main {
         System.out.println("\nEXAMPLE 4: Factorial of " + n + " is " + example4(n));
 
  
-        /*
+     
         //CHECKING UNDERSTANDING
         Recursion.ex13(7);
         Recursion.ex14(12);
@@ -39,7 +37,7 @@ public class Main {
         System.out.print("Enter a nonnegative integer: ");
         n = input.nextInt();
         System.out.println("\nEXAMPLE 5: Sequence value at " + n + " is " + example5(n));
-
+        
         String s;
         s = input.nextLine();  //used to clear newline from nextInt
         System.out.println("\nEXAMPLE 6: String Clean");
@@ -51,12 +49,12 @@ public class Main {
         System.out.print("Enter a String ");
         s = input.nextLine();
         System.out.println("\nEXAMPLE 7: The String: " + s + " has " + example7(s) + " abcs");
-            
+           
         System.out.println("\nEXAMPLE 8: Bunny Ears");
         System.out.print("Enter a nonnegative integer: ");
         n = input.nextInt();
         System.out.println("\nEXAMPLE 8: " + n + " bunnies have " + example8(n) + " ears");
-
+        /*    
         System.out.println("\nEXAMPLE 9: Mutant Bunny Ears");
         System.out.print("Enter a nonnegative integer: ");
         n = input.nextInt();
@@ -161,8 +159,12 @@ public class Main {
     //count abcs
     public static int example7(String str){
        //writing this as a group
-
-       return 0;
+        if (str.length() < 3)
+            return 0;
+        if (str.substring(0,3).equals("abc"))
+            return 1 + example7(str.substring(3));
+        else
+            return example7(str.substring(1));
     }
 
     //bunny ears
@@ -171,8 +173,8 @@ public class Main {
 
     public static int example8(int n){
        //writing this as a group
-
-       return 0;
+       
+        return 0;
     }
 
     //mutant bunny ears
