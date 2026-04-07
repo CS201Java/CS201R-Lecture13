@@ -39,31 +39,31 @@ public class Recursion{
     }
 
     //What is printed if n = 7
-    public static void ex13(Integer n){
+    public static void check1(Integer n){
         if (n == 1)
            System.out.println(n + " ");
         else {  
             System.out.print(n + " ");
-            ex13(n / 2);
+            check1(n / 2);
         }             
     }
 
     //What is printed if n = 12
-    public static void ex14(Integer n){
+    public static void check2(Integer n){
         if (n == 1)
            System.out.print(n + " ");
         else {  
-            ex14(n / 3);
+            check2(n / 3);
             System.out.print(n + " ");
         }             
     }
 
     //What is printed if n = 12
-    public static int ex14b(Integer n){
+    public static int check3(Integer n){
         if (n == 1)
            return 1;
         else {  
-            return 3* ex14b(n / 3);
+            return 2 * check3(n / 3);
         }             
     }
     //What is printed if the string is abcdefabc

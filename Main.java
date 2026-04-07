@@ -24,14 +24,13 @@ public class Main {
         System.out.print("Enter a nonnegative integer: ");
         n = input.nextInt();
         System.out.println("\nEXAMPLE 4: Factorial of " + n + " is " + example4(n));
-
- 
      
         //CHECKING UNDERSTANDING
-        Recursion.ex13(7);
-        Recursion.ex14(12);
+        System.out.println("\nEXAMPLE: Check your understanding");
+        Recursion.check1(7);
+        Recursion.check2(12);
         System.out.println();
-        System.out.println(Recursion.ex14b(12));
+        System.out.println(Recursion.check3(27));
 
         System.out.println("\nEXAMPLE 5: Fibonacci Sequence");
         System.out.print("Enter a nonnegative integer: ");
@@ -159,12 +158,7 @@ public class Main {
     //count abcs
     public static int example7(String str){
        //writing this as a group
-        if (str.length() < 3)
-            return 0;
-        if (str.substring(0,3).equals("abc"))
-            return 1 + example7(str.substring(3));
-        else
-            return example7(str.substring(1));
+       return 0;
     }
 
     //bunny ears
